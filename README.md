@@ -13,9 +13,9 @@ Tested on Ubuntu Linux. Please give feedback on other SOs!
 
 ## TODO
 
-[ ] what are `one` and `two`?
-[ ] what the hell does the `geo2` part mean?
-[ ] when `tree` option is falsy, should add parentId attribute to windows
+* [ ] what are `one` and `two`?
+* [ ] what the hell does the `geo2` part mean?
+* [ ] when `tree` option is falsy, should add parentId attribute to windows
 
 
 ## usage
