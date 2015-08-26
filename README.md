@@ -34,9 +34,31 @@ xWindows({tree:true});
       "one": "",
       "two": "",
       "size": [200, 150],
-      "pos": [0, 0]
+      "pos": [0, 0],
+      "geo2": [10, 10],
+      "children": []
+    },
+    {
+      "id": 1232,
+      "title": "window title 2",
+      "one": "app2",
+      "two": "app2",
+      "size": [200, 150],
+      "pos": [200, 0],
+      "geo2": [10, 10],
+      "children": [
+        {
+          "id": 1233,
+          "title": "window title 3",
+          "one": "",
+          "two": "",
+          "size": [400, 200],
+          "pos": [200, 0],
+          "geo2": [10, 10],
+          "children": []
+        }
+      ]
     }
   ]
 }
-
 ```
