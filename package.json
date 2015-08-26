@@ -1,0 +1,24 @@
+{
+  "name": "x-windows",
+  "version": "1.0.0",
+  "description": "x11 windows information",
+  "main": "lib.js",
+  "scripts": {
+  },
+  "keywords": [
+    "x11",
+    "xlib",
+    "xwindows",
+    "xwininfo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JosePedroDias/x-windows.git"
+  },
+  "author": {
+    "name" : "José Pedro Dias",
+    "email" : "jose.pedro.dias@gmail.com",
+    "url" : "http://josepedrodias.com/"
+  },
+  "license": "ISC"
+}
