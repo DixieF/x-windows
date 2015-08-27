@@ -14,10 +14,9 @@ Tested on Ubuntu Linux. Please give feedback on other SOs!
 ## TODO
 
 * [ ] what are `one` and `two`? (command, icon?)
-* [ ] what the hell does the `geo2` part mean? (is it border size?)
+* [ ] what the hell does the `geo2` part mean? (absPos?)
 * [ ] when `tree` option is falsy, should add parentId attribute to windows
-* [ ] fix absolute positioning (either by adding from parents above or by scraping `xwininfo -id <ID> -all`, which also returns parent id)
-* 
+* [ ] fix absolute positioning (either by adding from parents above or by scraping `xwininfo -id <ID> -all`, which also returns parent id) 
 
 ## usage
 
