@@ -8,22 +8,13 @@ This can be useful if you want to identify which program is running on the scree
 ## requirements
 
 Makes use of the `xwininfo` utility.  
-Tested on Ubuntu Linux. Please give feedback on other SOs!
-
-
-## TODO
-
-* [ ] what are `one` and `two`? (command, icon?)
-* [ ] what the hell does the `geo2` part mean? (absPos?)
-* [ ] when `tree` option is falsy, should add parentId attribute to windows
-* [ ] fix absolute positioning (either by adding from parents above or by scraping `xwininfo -id <ID> -all`, which also returns parent id) 
 
 ## usage
 
 ```javascript
 var xWindows = require('x-windows');
 
-xWindows({tree:true});
+xWindows('-root -tree');
 
 // RETURNS SOMETHING LIKE:
 {
