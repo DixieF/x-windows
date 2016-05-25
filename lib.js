@@ -72,9 +72,9 @@ var parseLine = function(l) {
 
 
 var xWindows = function(opts) {
-    opts = opts || {};
+    opts = opts || '-root';
 
-    var lines = child_process.execSync ('xwininfo -root -tree').toString().split('\n');
+    var lines = child_process.execSync ('xwininfo ' + opts).toString().split('\n');
 
     lines = lines.map(parseLine);
     lines = lines.filter(function(n) { return n; });
@@ -83,35 +83,7 @@ var xWindows = function(opts) {
         l.indent = (l.indent - 5) / 3 + 1;
     });
 
-    if (!(opts.tree)) {
-        return lines;
-    }
-
-    var topNode = {children:[]};
-    var lastNodeByIndent = [topNode];
-    lines.forEach(function(l) {
-        var ind = l.indent;
-        delete l.indent;
-        l.children = [];
-
-        var lastInd = lastNodeByIndent.length - 1;
-        var subBag;
-
-        if (ind > lastInd) {
-            lastNodeByIndent.push(l);
-            subBag = lastNodeByIndent[lastInd].children;
-        }
-        else if (ind === lastInd) {
-            subBag = lastNodeByIndent[ind].children;
-        }
-        else {
-            lastNodeByIndent.splice(ind + 1, 100);
-            subBag = lastNodeByIndent[ind].children;
-        }
-        subBag.push(l);
-    });
-
-    return topNode;
+    return lines;
 };
 
 
